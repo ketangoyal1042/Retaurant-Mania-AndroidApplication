@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemListActivity"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E16842"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_scrollFlags="enterAlways|scroll"
+        android:id="@+id/ToolBarLayout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:id="@+id/Linear"
+        android:weightSum="6"
+        android:layout_below="@+id/ToolBarLayout">
+        <TextView
+            android:id="@+id/txtListHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Choose from menu listed below: "
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="5"
+            />
+
+        <ImageView
+            android:id="@+id/imgFavButton"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_favnot"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:focusable="true" />
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/Linear"
+        android:background="#000000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="5dp"
+        android:id="@+id/recyclerItemList"
+        />
+
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ProgressBar"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btngotocart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="proceed to cart"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="-6dp"
+        android:backgroundTint="@color/redis"/>
+
+</RelativeLayout>

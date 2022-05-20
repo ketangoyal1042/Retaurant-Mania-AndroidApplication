@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#F44336">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/kk2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/imgLogo"
+        android:hint="@string/m_number"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:background="@drawable/custom_editview"
+        android:drawableStart="@drawable/ic_baseline_phone_android_24"
+        android:drawablePadding="12dp"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="#808080"
+        android:inputType="phone"
+        android:maxLength="10"
+        />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/etPhone"
+        android:hint="@string/pass"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_editview"
+        android:drawablePadding="12dp"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:textColor="@color/black"
+        android:textColorHint="#808080"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/btnLoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/etPass"
+        android:layout_margin="23dp"
+        android:padding="10dp"
+        android:backgroundTint="#B50C00"
+        android:textColor="#FFFFFF"
+        />
+
+    <TextView
+        android:id="@+id/txtForgot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/passview"
+        android:layout_below="@+id/btnLoginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="0dp"
+        android:textColor="@drawable/custom_textview"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/registerview"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        android:textColor="@drawable/custom_textview"
+        android:focusable="true" />
+
+</RelativeLayout>

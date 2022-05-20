@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragment.HistoryFragment"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtListHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your previous orders are listed below: "
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:id="@+id/recyclerHistory"
+        android:layout_below="@+id/txtListHeading"/>
+
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ProgressBar"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

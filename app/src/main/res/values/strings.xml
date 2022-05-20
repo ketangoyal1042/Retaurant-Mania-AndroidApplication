@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Restaurant Mania</string>
+    <string name="open_drawer">open_drawer</string>
+    <string name="close_drawer">close_drawer</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="KKgoyals">KK Goyals</string>
+    <string name="m_number">Mobile Number (10 digit)</string>
+    <string name="pass">Password</string>
+    <string name="registerview">Don\'t have an acoount? | Sign up Now</string>
+    <string name="passview">Forgot Password?</string>
+    <string name="name_hint">Name (Min. 3 character)</string>
+    <string name="email_hint">Email Address</string>
+    <string name="address_hint">Delivery Address</string>
+    <string name="pass_tag">password</string>
+    <string name="password_tag">Password (Min. 4 Characters)</string>
+    <string name="confirm_password_tag">Confirm Password</string>
+    <string name="already_have_an_account_sign_in">Already have an Account | Sign In</string>
+    <string name="shared_file">login_file</string>
+    <string name="mobile_file">mobile_file</string>
+    <string name="password_file">password_file</string>
+    <string name="ProfilePref">ProfilePref</string>
+    <string name="id">"5"</string>
+    <string name="ForgotMobPref">ForgotMobPref</string>
+
+</resources>

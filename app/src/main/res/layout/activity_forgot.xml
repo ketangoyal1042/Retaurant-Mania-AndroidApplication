@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgotActivity"
+    android:background="#F44336">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/kk2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        />
+
+    <TextView
+        android:id="@+id/txtForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Enter your register mobile number and email below:"
+        android:layout_below="@+id/imgLogo"
+        android:layout_margin="0dp"
+        android:textColor="@drawable/custom_textview"
+        android:clickable="true"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+
+
+        android:focusable="true" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtForgot"
+        android:hint="@string/m_number"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_editview"
+        android:drawableStart="@drawable/ic_baseline_phone_android_24"
+        android:drawablePadding="12dp"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="#808080"
+        android:inputType="phone"
+        android:maxLength="10"
+        />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/etPhone"
+        android:hint="@string/email_hint"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_editview"
+        android:drawablePadding="12dp"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:drawableStart="@drawable/email_tag"
+        android:textColor="@color/black"
+        android:textColorHint="#808080"
+        android:inputType="textEmailAddress"
+        />
+
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/etEmail"
+        android:layout_margin="23dp"
+        android:padding="10dp"
+        android:backgroundTint="#B50C00"
+        android:textColor="#FFFFFF"
+        />
+
+
+
+    <TextView
+        android:id="@+id/txtLogin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Back to Login"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        android:textColor="@drawable/custom_textview"
+        android:focusable="true" />
+
+
+    <TextView
+        android:id="@+id/txtAlready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Already Having OTP"
+        android:layout_below="@+id/btnNext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        android:textColor="@drawable/custom_textview"
+        android:focusable="true" />
+
+</RelativeLayout>

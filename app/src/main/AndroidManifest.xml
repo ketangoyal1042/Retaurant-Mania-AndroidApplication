@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ketan.restaurantmania">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_foodlogo1"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_foodlogo1_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RestaurantMania">
+        <activity android:name=".PlaceOrderActivity"></activity>
+        <activity android:name=".CartActivity" />
+        <activity android:name=".ItemListActivity" />
+        <activity android:name=".ResetActivity" />
+        <activity android:name=".ForgotActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity">
+
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

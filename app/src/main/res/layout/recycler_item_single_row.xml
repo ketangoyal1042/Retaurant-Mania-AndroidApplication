@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/AllContent"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:weightSum="6">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/couning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5">
+
+            <TextView
+                android:id="@+id/txtMenuFoodName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food Name is written here"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/txtMenuFoodPrice"
+                android:layout_below="@+id/txtMenuFoodName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs. 300"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1.5"
+            android:backgroundTint="#F44336"
+            android:layout_marginTop="18dp"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:layout_marginRight="5dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
